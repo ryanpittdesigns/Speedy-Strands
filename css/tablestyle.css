@@ -1,0 +1,280 @@
+/* BASICS */
+body {
+  background-image: url(../img/patternone.png);
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.5;
+  color: #212121;
+  width: auto;
+  margin: auto;
+}
+
+/*NAV*/
+nav {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  margin:auto;
+  top:0;
+  background-color: #0097a7;
+  opacity: .7;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 16px;
+  padding-left:10px;
+  text-align:left;
+  font-family: 'League Script', cursive;
+}
+nav li{
+  display: inline-block;
+}
+nav img{
+  width:50px;
+}
+/*main*/
+.main{
+  padding-top:10%;
+  padding-bottom: 10%;
+}
+.custom-list {
+ margin: 0;
+ padding: 0;
+ list-style-type: none;
+}
+.custom-list p {
+ counter-increment: step-counter;
+}
+.custom-list p:before {
+ content: counter(step-counter);
+ font-size: 6rem;
+}
+/*sections*/
+.container {
+  position: relative;
+  width: 25%;
+  display:inline-block;
+  float:left;
+  margin: 20px 2px 20px 80px ;
+}
+
+.image {
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 380px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.container:hover .overlay{
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.text a{
+    text-decoration: none;
+    color: #fe4081;
+}
+.main ul{
+  list-style-type: none;
+}
+.one{
+    font-family: 'League Script', cursive;
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top:320px;
+    left:60px;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0;
+}
+.two{
+    font-family: 'League Script', cursive;
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top:340px;
+    left:460px;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0;
+}
+.three{
+    font-family: 'League Script', cursive;
+    color: white;
+    font-size: 3em;
+    position: absolute;
+    top:310px;
+    left:855px;
+    transform: rotate(-20deg);
+    transform-origin: 100% 0;
+}
+/* FOOTER */
+
+footer {
+  padding: 2rem 5%;
+  background-color: #BDBDBD;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+}
+
+footer .copyright {
+  margin: 0;
+  line-height: 1.5rem; /* no margin plus same line height */
+}
+
+footer .nav-social {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.5rem; /* no margin plus same line height */
+}
+
+footer .nav-social li {
+  display: inline-block;
+  color:black;
+}
+
+footer .nav-social a {
+  color: #212121;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* MEdia Queries*/
+
+@media screen and (max-width:73rem){
+  .image{
+    width:75%;
+  }
+  .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 245px;
+  width: 192px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.container:hover .overlay{
+  opacity: 1;
+}
+    .one{
+        font-family: 'League Script', cursive;
+        color: black;
+        font-size: 1em;
+        position: absolute;
+        top:360px;
+        left:60px;
+        transform: rotate(-20deg);
+        transform-origin: 100% 0;
+    }
+    .two{
+        font-family: 'League Script', cursive;
+        color: black;
+        font-size: 1em;
+        position: absolute;
+        top:370px;
+        left:430px;
+        transform: rotate(-20deg);
+        transform-origin: 100% 0;
+    }
+    .three{
+        font-family: 'League Script', cursive;
+        color: black;
+        font-size: 1em;
+        position: absolute;
+        top:360px;
+        left:805px;
+        transform: rotate(-20deg);
+        transform-origin: 100% 0;
+    }
+@media screen and (max-width:64rem){
+
+    .main{
+    margin: 0px 0 0px 200px ; 
+    }
+    .main ul{
+      text-align:center;
+      display: block;
+      float:left;
+    }
+    .overlay{
+      width: 100px;
+      height: 115px;
+    }
+    .one{
+      font-size: 3em;
+      top:0px;
+      left:300px;
+    }
+    .two{
+      font-size: 3em;
+      top:170px;
+      left:300px;
+    }
+    .three{
+      font-size: 3em;
+      top:300px;
+      left:300px;  
+    }
+    .image{
+      width: 100px;
+      height: 115px;
+  }
+}
+@media screen and (max-width:40rem){
+    .main{
+    margin: 40px 0 0px 100px ; 
+    }  
+    .one{
+      font-size: 4em;
+      top:0px;
+      left:80px;
+    }
+    .two{
+
+      font-size: 4em;
+      top:170px;
+      left:80px;
+    }
+    .three{
+      font-size: 4em;
+      top:300px;
+      left:80px;  
+    }
+}
+
+
+

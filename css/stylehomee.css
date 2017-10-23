@@ -1,0 +1,197 @@
+/* BASICS */
+body {
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.5;
+  color: #212121;
+  width: 100%;
+  margin: auto;
+}
+/*Header*/
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  margin:auto;
+  top:0;
+  background-color: #0097a7;
+  opacity: .8;
+}
+nav a{
+  text-decoration: none;
+  color: white;
+
+}
+nav li{
+  display: inline-block;
+}
+nav img{
+  width:50px;
+}
+.bars{
+	position: relative;
+	left: 1100px;
+ 	top:-8px;
+}
+/*First background image*/
+
+.hero{
+	background-image: url(../img/starneck.jpg);
+	opacity: .9;
+	margin: auto;
+	width:80%;
+	padding:278px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.hero h2,h1{
+	color: black;
+	position: relative;
+  	left: 340px;
+ 	top:270px;
+ 	line-height: .2;
+ 	text-align: center;
+ 	text-shadow: 1px 1px 0px #0097a7;
+}
+h1:hover{
+	color: #fe4081;
+}
+/*Example 
+.hero h2,h1{
+  width:cover;
+  font-weight: 100;
+  text-align: center;
+  position: relative;
+  right: 370px;
+  bottom:190px;
+  line-height: .5;
+}
+.hero h1{
+  font-size: 35px;
+}
+.hero h2{
+  font-size: 25px;
+  color:black;
+}
+
+*************/
+
+/*Main Unordered list*/
+main{
+	width: 82%
+}
+main ul{
+	padding-top: 100px;
+	color:black;
+	list-style: none;
+}
+main a{
+	color: black;
+	margin:auto;
+	text-decoration: none;
+	line-height: .2px;
+	border: none;
+    border-bottom: 4px solid #fe4081;
+    border-radius: 4px;
+
+}
+a:hover { 
+    background-color: #fe4081;
+}
+main ul{
+	position: absolute;
+	top: 80px;
+	left:40px;
+}
+.right{
+	text-align: right;
+	position: absolute;
+	top: 160px;
+	left:700px;
+}
+.left{
+	text-align: left;
+	position: absolute;
+	top: 240px;
+	left:40px;
+}
+.right a:hover { 
+    background-color: #fe4081;
+}
+/*FOOTER*/
+footer {
+	padding: 1.5rem 3%;
+  background-color: #BDBDBD;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  width: 94%;
+  line-height: 1.5rem;
+}
+footer .copyright {
+  margin: 0;
+  line-height: 1.5rem; /* no margin plus same line height */
+}
+
+footer .nav-social {
+  margin: auto;
+  padding: 0;
+  list-style-type: none;
+  line-height: 1.5rem; /* no margin plus same line height */
+}
+
+footer .nav-social li {
+  display: inline-block;
+  color:black;
+}
+
+footer .nav-social a {
+  color: #212121;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width:76rem){
+	.right{
+		text-align: left;
+		position: absolute;
+		top: 340px;
+		left:40px;
+	}
+	.hero h1{
+		text-align: left;
+		position: absolute;
+		top: 70px;
+		left:40px;
+	}
+	.hero h2{
+		text-align: left;
+		position: absolute;
+		top: 108px;
+		left:60px;
+	}
+	.bars{
+		position: relative;
+		left: 600px;
+	 	top:-8px;
+	}
+}
+@media screen and (max-width:40rem){
+	.hero{
+	background-image: url(../img/smileneck.jpg);
+	opacity: .9;
+	margin: auto;
+	width:80%;
+	padding:280px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+}
+
+
+
+
+
+
+
